@@ -1,12 +1,28 @@
+//Import the React and ReactDOM libraries
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+function getName(){
+  return "Dale";
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+//Create a React component
+const App = () => {
+  return (
+    <div>
+      <label className="label" for="name">
+        Enter name:
+      </label>
+      <input id="name" type="text" />
+      <button style={{backgroundColor:'red', color:'white'}}>Submit</button>
+      <div>
+        <h3>{getName()}</h3>
+      </div>
+    </div>
+  );
+}
+
+//Take the React component and show it on screen
+ReactDOM.render(
+  <App />, document.querySelector('#root')
+);
