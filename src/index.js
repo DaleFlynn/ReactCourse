@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 function getName(){
-  return "Dale";
+  return "Dale Flynn is gay";
 }
 
 //Create a React component
