@@ -5,23 +5,14 @@ import faker from 'faker';
 import CommentDetail from './CommentDetail';
 import ApprovalCard from './ApprovalCard';
 
-function getName(){
-  return "Dale Parkes is gay";
-}
+
 
 //Create a React component
+//Blogpost approval card
 const App = () => {
   return (
     <div>
-      <label className="label" for="name">
-        Enter name:
-      </label>
-      <input id="name" type="text" />
-      <button style={{backgroundColor:'red', color:'white'}}>Submit</button>
-      <div>
-        <h3>{getName()}</h3>
-      </div>
-      //Blogpost cards
+
       <div className="ui container comments">
       <ApprovalCard>
         <CommentDetail

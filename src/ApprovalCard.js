@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+//Reusable approval card function
 const ApprovalCard = (props) => {
   return (
 

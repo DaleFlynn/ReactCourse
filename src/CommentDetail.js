@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+//Reusable blogpost function
 const CommentDetail = (props) => {
   return (
     <div className="comment">
